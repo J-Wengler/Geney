@@ -6,7 +6,7 @@
           issue on the project's
           <a href="https://github.com/srp33/Geney/issues">Github repository</a>.
           If you would like to contact us directly, Dr. Piccolo's contact information is found
-          <a href="http://piccolo.byu.edu/Contact">here</a>.
+          <a href="http://piccolo.byu.edu/Contact.aspx">here</a>.
       </p>
 
       <router-link to="/" class="btn btn-primary btn-lg mt-5">
