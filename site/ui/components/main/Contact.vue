@@ -28,20 +28,6 @@ export default {
   computed: {
   },
   methods: {
-    gitLink () {
-      console.log('sending github report!');
-      this.$ga.event({
-        eventCatergory: 'Redirection',
-        eventAction: 'Clicked on Github Link',
-      });
-    },
-    byuLink () {
-      console.log('sending byu report!');
-      this.$ga.event({
-        eventCatergory: 'Redirection',
-        eventAction: 'Clicked on BYU Contact Link',
-      });
-    },
   },
 };
 </script>

@@ -26,15 +26,6 @@ export default {
   data () {
     return {};
   },
-  methods: {
-    sendReport () {
-      console.log('clicked on feedback link!');
-      this.$ga.event({
-        eventCatergory: 'Feedback',
-        eventAction: 'Clicked on return feedback link',
-      });
-    },
-  },
 };
 </script>
 

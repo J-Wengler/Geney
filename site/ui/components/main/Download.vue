@@ -587,12 +587,6 @@ export default {
           show: 15,
         });
       }
-      this.$ga.event({
-        eventCatergory: 'Download',
-        eventAction: 'Attempted Download',
-        eventValue: 'Name_of_Set', // What Variable do I use?
-
-      });
     },
     getDownload (downloadPath) {
       // const dataset = this.$route.params.dataset;
