@@ -63,6 +63,12 @@ export default {
   },
   methods: {
     login (e) {
+      this.$ga.event({
+        eventCatergory: 'Login',
+        eventAction: 'Attempted Login',
+        eventValue: 'Username', // What Variable do I use?
+
+      });
       let that = this;
       this.$validator.validateAll().then((valid) => {
         if (valid) {

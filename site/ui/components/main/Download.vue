@@ -454,6 +454,12 @@ export default {
       // console.log('finished canceling');
       this.$store.commit('downloadStatus', '');
       this.numQueries = 0;
+      this.$ga.event({
+        eventCatergory: 'Download',
+        eventAction: 'Cancelled Download',
+        eventValue: 'Name_of_Set', // What Variable do I use?
+
+      });
     },
     getFormErrors () {
       let valid = false;
@@ -587,6 +593,12 @@ export default {
           show: 15,
         });
       }
+      this.$ga.event({
+        eventCatergory: 'Download',
+        eventAction: 'Attempted Download',
+        eventValue: 'Name_of_Set', // What Variable do I use?
+
+      });
     },
     getDownload (downloadPath) {
       // const dataset = this.$route.params.dataset;
@@ -622,6 +634,12 @@ export default {
       }, response => {
         console.log('error');
       });
+      this.$ga.event({
+        eventCatergory: 'Download',
+        eventAction: 'Successful Download',
+        eventValue: 'Name_of_Set', // What Variable do I use?
+
+      });
     },
     plot () {
       if (this.formErrors !== null) {
@@ -653,6 +671,12 @@ export default {
           message: 'Error generating link. Please try again later.',
           show: 3,
         });
+      });
+      this.$ga.event({
+        eventCatergory: 'Plot',
+        eventAction: 'Plot Generated',
+        eventValue: 'Name_of_Set', // What Variable do I use?
+
       });
     },
     getQuery () {
