@@ -4,6 +4,7 @@ import router from './router';
 import store from './store';
 import validator from './validator';
 import BootstrapVue from 'bootstrap-vue';
+// import VueMasonryPlugin from 'vue-masonry' For some off reason this import statement throws an error after vue-analytics was implemented;
 import {VueMasonryPlugin} from 'vue-masonry';
 import VueAnalytics from 'vue-analytics';
 import './http';
